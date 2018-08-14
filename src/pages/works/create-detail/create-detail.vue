@@ -112,10 +112,22 @@
               <div v-else>{{work.name}}</div>
             </el-col>
           </el-form-item>
-          <el-form-item :label="`封面文字${isEnglish ? '（英文）' : ''}`">
+          <el-form-item :label="`封面标题${isEnglish ? '（英文）' : ''}`">
             <el-col :span="8">
-              <el-input v-model="work.coverText" v-if="isInputShown" placeholder="请输入封面文字"></el-input>
-              <div v-else>{{work.coverText}}</div>
+              <el-input v-model="work.coverTitle" v-if="isInputShown" placeholder="请输入封面标题"></el-input>
+              <div v-else>{{work.coverTitle}}</div>
+            </el-col>
+          </el-form-item>
+          <el-form-item :label="`封面提问${isEnglish ? '（英文）' : ''}`">
+            <el-col :span="8">
+              <el-input v-model="work.coverQuestion" v-if="isInputShown" placeholder="请输入封面提问"></el-input>
+              <div v-else>{{work.coverQuestion}}</div>
+            </el-col>
+          </el-form-item>
+          <el-form-item :label="`封面答案${isEnglish ? '（英文）' : ''}`">
+            <el-col :span="8">
+              <el-input v-model="work.coverAnswer" v-if="isInputShown" placeholder="请输入封面答案"></el-input>
+              <div v-else>{{work.coverAnswer}}</div>
             </el-col>
           </el-form-item>
           <el-form-item :label="`封面视频地址${isEnglish ? '（英文）' : ''}`">
